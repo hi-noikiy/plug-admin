@@ -1,0 +1,52 @@
+.pirate .tab-pane {
+    position: absolute;
+    top: 42px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    overflow: auto;
+    padding: 15px;
+}
+
+.pirate > .nav-tabs {
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+}
+
+#dataCharts .product-list .thumbnail p:last-child {
+    margin-bottom: 0px;
+}
+
+#dataCharts .product-list .thumbnail .product-price {
+    color: #e64340;
+}
+
+#dataCharts .product-list .thumbnail .btn-group {
+    float: right;
+}
+
+#dataCharts .user-info {
+    display: flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+}
+
+#dataCharts .user-info .user-name .vip {
+    color: orange;
+}
+
+#dataCharts .user-info .user-header-img {
+    flex: 0 0 171px;
+}
+
+#dataCharts .user-info .user-info-detail {
+    flex: 1;
+    padding-left: 20px;
+    color: #666;
+}

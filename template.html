@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Game plug</title>
+
+	<!-- bootstrap v3 && fontawesome -->
+	<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+
+	<!-- custom style -->
+	<link rel="stylesheet" href="./asset/styles/global.css">
+
+	<!-- jquery -->
+	<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+</head>
+<body>
+	<div id="wrapper">
+		<section class="wrapper-section">
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="bs-navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href="#" class="navbar-brand">Plug</a>
+					</div>
+					<div id="bs-navbar-collapse" class="collapse navbar-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a href="#">
+									系统消息
+									<span class="badge">3</span>
+								</a>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									<div class="user-header-img">
+										<img src="" alt="">
+									</div>
+									<span>admin</span>
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" role="menu">
+									<li>
+										<a href="#">用户资料</a>
+									</li>
+									<li>
+										<a href="#">设置</a>
+									</li>
+									<li role="separator" class="divider"></li>
+									<li>
+										<a href="./login.html">
+											<i class="fa fa-sign-out"></i>
+											退出
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</section>
+		<section class="wrapper-section flex">
+			<aside class="aside" id="aside">
+				<ul class="panel-group" id="accordion" role="tablist">
+					<li class="panel panel-link">
+						<a href="index.html" data-panel="false">
+							<i class="fa fa-tv"></i>
+							数据概括
+						</a>
+					</li>
+					<li class="panel panel-default">
+						<div class="panel-heading" role="tab" id="asideHeadingGameList">
+							<a href="#asideCollapseList" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="asideControllList">
+								<span class="caret"></span>
+								游戏列表
+							</a>
+						</div>
+						<ul id="asideCollapseList" class="panel-collapse collapse" role="tabpanel" aria-labelledby="asideHeadingGameList">
+							<li>
+								<a href="#" data-panel="true">海盗来了</a>
+							</li>
+						</ul>
+					</li>
+					<li class="panel panel-default">
+						<div class="panel-heading" role="tab" id="asideHeadingHelp">
+							<a href="#asideCollapseHelp" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="asideControllHelp">
+								<span class="caret"></span>
+								关于 Plug
+							</a>
+						</div>
+						<ul id="asideCollapseHelp" class="panel-collapse collapse" role="tabpanel" aria-labelledby="asideHeadingHelp">
+							<li>
+								<a href="#" data-panel="true">反馈建议</a>
+							</li>
+							<li>
+								<a href="#" data-panel="true">帮助 FAQ</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</aside>
+			<div class="wrapper-content">
+				<h1>Hello World!</h1>
+			</div>
+		</section>
+	</div>
+
+	<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="./asset/scripts/aside.js"></script>
+</body>
+</html>
