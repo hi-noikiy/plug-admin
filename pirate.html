@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Game plug</title>
+
+	<!-- bootstrap v3 && fontawesome -->
+	<link rel="stylesheet" href="./bower_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./bower_modules/font-awesome/css/font-awesome.min.css">
+
+	<!-- custom style -->
+	<link rel="stylesheet" href="./asset/styles/global.css">
+
+	<!-- jquery -->
+	<script src="./bower_modules/jquery/dist/jquery.min.js"></script>
+
+</head>
+<body>
+	<div id="wrapper">
+		<section class="wrapper-section">
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="bs-navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href="#" class="navbar-brand">GAME SCRIPT PLAN</a>
+					</div>
+					<div id="bs-navbar-collapse" class="collapse navbar-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a href="#">
+									系统消息
+									<span class="badge">3</span>
+								</a>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									<div class="user-header-img">
+										<img src="" alt="">
+									</div>
+									<span>admin</span>
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" role="menu">
+									<li>
+										<a href="#">用户资料</a>
+									</li>
+									<li>
+										<a href="#">设置</a>
+									</li>
+									<li role="separator" class="divider"></li>
+									<li>
+										<a href="./login.html">
+											<i class="fa fa-sign-out"></i>
+											退出
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</section>
+		<section class="wrapper-section flex">
+			<aside class="aside" id="aside">
+				<ul class="panel-group" id="accordion" role="tablist">
+					<li class="panel panel-link">
+						<a href="index.html" data-panel="false">
+							<i class="fa fa-tv"></i>
+							数据概括
+						</a>
+					</li>
+					<li class="panel panel-default">
+						<div class="panel-heading" role="tab" id="asideHeadingGameList">
+							<a href="#asideCollapseList" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="asideControllList">
+								<span class="caret"></span>
+								游戏列表
+							</a>
+						</div>
+						<ul id="asideCollapseList" class="panel-collapse collapse" role="tabpanel" aria-labelledby="asideHeadingGameList">
+							<li>
+								<a href="#" data-panel="true">海盗来了</a>
+							</li>
+						</ul>
+					</li>
+					<li class="panel panel-default">
+						<div class="panel-heading" role="tab" id="asideHeadingHelp">
+							<a href="#asideCollapseHelp" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="asideControllHelp">
+								<span class="caret"></span>
+								关于 Plug
+							</a>
+						</div>
+						<ul id="asideCollapseHelp" class="panel-collapse collapse" role="tabpanel" aria-labelledby="asideHeadingHelp">
+							<li>
+								<a href="#" data-panel="true">反馈建议</a>
+							</li>
+							<li>
+								<a href="#" data-panel="true">帮助 FAQ</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</aside>
+			<div class="wrapper-content">
+				<div class="pirate">
+					
+							<div class="row product-list">
+								<div class="col-md-2">
+									<div class="thumbnail">
+										<img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTYwZGViZDU3NjEgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNjBkZWJkNTc2MSI+PHJlY3Qgd2lkdGg9IjE3MSIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI1OS41NTQ2ODc1IiB5PSI5NC41Ij4xNzF4MTgwPC90ZXh0PjwvZz48L2c+PC9zdmc+"
+										 width="100%" alt="">
+										<div class="caption">
+											<h5>海盗帽</h5>
+											<p>
+												<span class="product-price">¥2.00</span>
+												<span class="btn-group">
+													<a href="#" class="btn btn-xs btn-info" role="button" data-title="Product name" data-content="Product Detail">详情</a>
+													<a href="#" class="btn btn-xs btn-warning" role="button">购买</a>
+												</span>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="thumbnail">
+										<img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTYwZGViZDU3NjEgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNjBkZWJkNTc2MSI+PHJlY3Qgd2lkdGg9IjE3MSIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI1OS41NTQ2ODc1IiB5PSI5NC41Ij4xNzF4MTgwPC90ZXh0PjwvZz48L2c+PC9zdmc+"
+										 width="100%" alt="">
+										<div class="caption">
+											<h5>更多活动</h5>
+											<p>
+												<span class="product-price">未知</span>
+												<span class="btn-group">
+													<a href="#" class="btn btn-xs btn-info" role="button" data-title="Product name" data-content="Product Detail">详情</a>
+													<a href="#" class="btn btn-xs btn-warning disabled" role="button">购买</a>
+												</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- modal -->
+							<div class="modal fade" tabindex="-1" role="dialog">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">
+													<i class="fa fa-close"></i>
+												</span>
+											</button>
+											<h4 class="modal-title">批量购买</h4>
+										</div>
+										<div class="modal-body">
+											<div class="table batch-pay-table">
+												<div class="table-header">
+													<div class="table-tr">
+														<div class="table-th">编号</div>
+														<div class="table-th">商品</div>
+														<div class="table-th">单价</div>
+														<div class="table-th">数量</div>
+														<div class="table-th">操作</div>
+													</div>
+												</div>
+												<div class="table-body">
+													<div class="table-tr">
+														<div class="table-td">1</div>
+														<div class="table-td">海盗帽</div>
+														<div class="table-td">¥2</div>
+														<div class="table-td">
+															<input type="number" min="0" class="form-control">
+														</div>
+														<div class="table-td">
+															<a href="javascript:;" class="btn btn-link" data-dropdown="false">展开</a>
+														</div>
+													</div>
+													<div class="table-tr">
+														<div class="table-td">1</div>
+														<div class="table-td">海盗帽</div>
+														<div class="table-td">¥2</div>
+														<div class="table-td">
+															<input type="number" min="0" class="form-control">
+														</div>
+														<div class="table-td">
+															<a href="javascript:;" class="btn btn-link" data-dropdown="false">展开</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+											<button type="button" class="btn btn-warning">购买</button>
+										</div>
+									</div>
+								</div>
+							</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<script src="./bower_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="./asset/scripts/aside.js"></script>
+</body>
+</html>

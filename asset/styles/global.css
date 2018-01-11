@@ -30,6 +30,23 @@ a:focus, button:focus, input:focus, textarea:focus {
 	flex-wrap: wrap;
 }
 
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+	border: 0px;
+	border-bottom: 1px solid tomato;
+	color: tomato;
+}
+.nav-tabs>li>a, .nav-tabs>li>a:hover {
+	background: none;
+	color: #555;
+	border: 0px;
+	border-radius: 0px;
+}
+
+.modal-content {
+	box-shadow: none;
+	border-radius: 0px;
+}
+
 .wrapper-section {
 	position: absolute;
 }
@@ -84,12 +101,12 @@ a:focus, button:focus, input:focus, textarea:focus {
 	border-radius: 0px;
 	border: 0px;
 	font-size: 14px;
+	box-shadow: none;
 }
 
 .aside .panel-group .panel-heading {
 	padding: 0px;
 	background-color: white;
-	border-bottom: 1px solid #f4f4f4;
 }
 
 .aside .panel-group .panel-heading a,
@@ -105,6 +122,18 @@ a:focus, button:focus, input:focus, textarea:focus {
 	margin-right: 6px;
 	font-size: 12px;
 	width: 8px;
+}
+
+.aside .panel-group .panel-heading a .caret {
+	transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+}
+
+.aside .panel-group .panel-heading a .caret.rotate {
+	transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
 }
 
 .aside .panel-group .panel-collapse {
@@ -135,3 +164,24 @@ a:focus, button:focus, input:focus, textarea:focus {
 	background-color: #f6f6f6;
 	position: relative;
 }
+
+.table .table-tr {
+	display: flex;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	border-top: 1px solid #f2f2f2;
+}
+
+.table .table-header {
+	border-bottom: 1px solid #f2f2f2;
+}
+
+.table .table-tr .table-th,
+.table .table-tr .table-td {
+	padding: 6px 12px;
+}
+
+
+
+

@@ -1,4 +1,4 @@
-.pirate .tab-pane {
+.Generalization .tab-pane {
     position: absolute;
     top: 42px;
     left: 0px;
@@ -8,13 +8,13 @@
     padding: 15px;
 }
 
-.pirate > .nav-tabs {
+.Generalization > .nav-tabs {
     background-color: white;
     position: absolute;
     top: 0px;
     left: 0px;
     right: 0px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+    border-bottom: 1px solid #ddd;
 }
 
 #dataCharts .product-list .thumbnail p:last-child {
@@ -49,4 +49,34 @@
     flex: 1;
     padding-left: 20px;
     color: #666;
+}
+
+#dataCharts .batch-pay-table .table-th,
+#dataCharts .batch-pay-table .table-td {
+
+}
+
+#dataCharts .batch-pay-table .table-th:first-child,
+#dataCharts .batch-pay-table .table-td:first-child {
+    width: 10%;
+}
+
+#dataCharts .batch-pay-table .table-th:nth-child(2),
+#dataCharts .batch-pay-table .table-td:nth-child(2) {
+    width: 35%;
+}
+
+#dataCharts .batch-pay-table .table-th:nth-child(3),
+#dataCharts .batch-pay-table .table-td:nth-child(3) {
+    width: 15%;
+}
+
+#dataCharts .batch-pay-table .table-th:nth-child(4),
+#dataCharts .batch-pay-table .table-td:nth-child(4) {
+    width: 30%;
+}
+
+#dataCharts .batch-pay-table .table-th:last-child,
+#dataCharts .batch-pay-table .table-td:last-child {
+    width: 10%;
 }
