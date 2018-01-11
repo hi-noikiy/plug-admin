@@ -115,5 +115,15 @@
 
 	<script src="./bower_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="./asset/scripts/aside.js"></script>
+	<script>
+		$(function () {
+			$('#accordion').on('show.bs.collapse', function (event) {
+				$(event.target).siblings().children().children().addClass('rotate')
+			});
+			$('#accordion').on('hide.bs.collapse', function (event) {
+				$(event.target).siblings().children().children().removeClass('rotate')
+			})
+		})
+	</script>
 </body>
 </html>

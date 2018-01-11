@@ -80,3 +80,47 @@
 #dataCharts .batch-pay-table .table-td:last-child {
     width: 10%;
 }
+
+#orderSearch .where-search {
+    margin-bottom: 15px;
+}
+
+#orderSearch .where-search,
+#orderSearch .showTables {
+    padding: 12px;
+}
+
+#orderSearch .orderLogList .order {
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+#orderSearch .orderLogList .order .panel-footer a {
+    float: left;
+}
+
+#orderSearch .orderLogList .order .order-time {
+    float: right;
+}
+
+#orderSearch .orderLogList .order .title {
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+#orderSearch .orderLogList .order .photo {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+}
+
+/*#orderSearch .orderLogList .order .table tr th, */
+#orderSearch .orderLogList .order .table tr td {
+    line-height: 50px;
+    vertical-align: center;
+}
+
+#orderSearch .orderLogList .order .table tr td {
+    border-top: 0px;
+}

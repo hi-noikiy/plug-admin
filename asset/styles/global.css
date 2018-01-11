@@ -6,6 +6,7 @@
 body {
 	font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
 	background: #f8f8f8;
+	color: #3c404d;
 }
 
 li {
@@ -40,6 +41,14 @@ a:focus, button:focus, input:focus, textarea:focus {
 	color: #555;
 	border: 0px;
 	border-radius: 0px;
+}
+
+.table>thead>tr>th {
+	border-bottom-width: 1px;
+}
+
+.table>tbody>tr>td {
+	font-size: 12px;
 }
 
 .modal-content {
@@ -91,7 +100,7 @@ a:focus, button:focus, input:focus, textarea:focus {
 
 .aside {
 	flex: 0 0 200px;
-	border-right: 1px solid #f0f0f0;
+	border-right: 1px solid #e8e8e8;
 	background-color: white;
 }
 
