@@ -126,7 +126,7 @@
 
 @media (min-width: 320px) and (max-width: 640px) {
     .Generalization .tab-pane {
-        padding: 12px;
+        padding: 15px;
     }
 
     #dataCharts .user-info .user-header-img {
@@ -134,8 +134,27 @@
         margin-right: 12px;
     }
 
+    #dataCharts .user-info .user-info-detail {
+        flex: 1;
+    }
+
     #dataCharts .user-info .user-info-detail h4 {
         font-size: 16px;
+    }
+
+    #dataCharts .user-info .user-info-detail .udetail {
+        color: #777;
+        width: 50%;
+        margin-bottom: 0px;
+    }
+
+    #dataCharts .user-info .user-info-detail .udetail.price {
+        display: block;
+        width: 100%;
+    }
+
+    #dataCharts .user-info .user-info-detail .udetail .u-value {
+        color: #00B7FF;
     }
 }
 

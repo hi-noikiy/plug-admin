@@ -108,6 +108,14 @@ a:focus, button:focus, input:focus, textarea:focus {
 	border-radius: 0px;
 }
 
+.form-control[readonly] {
+	background-color: white;
+}
+
+.Generalization .user-header-img .img-thumbnail {
+	padding: 0px;
+}
+
 
 @media (min-width: 769px) {
 	.form-control {
