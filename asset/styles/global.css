@@ -31,6 +31,71 @@ a:focus, button:focus, input:focus, textarea:focus {
 	flex-wrap: wrap;
 }
 
+.aside .panel-group .panel {
+	margin-bottom: 0px;
+	box-shadow: 0px;
+	border-radius: 0px;
+	border: 0px;
+	font-size: 14px;
+	box-shadow: none;
+}
+
+.aside .panel-group .panel-collapse a {
+	display: block;
+	padding: 8px 15px 8px 34px;
+	border-bottom: 1px solid #f4f4f4;
+	color: #555;
+	transition: .3s;
+	-moz-transition: .3s;
+	-webkit-transition: .3s;
+}
+
+.aside .panel-group .panel-heading {
+	padding: 0px;
+	background-color: white;
+}
+
+.aside .panel-group .panel-heading a,
+.aside .panel-group .panel-link a {
+	display: block;
+	padding: 8px 15px;
+	text-decoration: none;
+	color: #3c404d;
+}
+
+.aside .panel-group .panel-heading a .caret,
+.aside .panel-group .panel-link a .fa {
+	margin-right: 6px;
+	font-size: 12px;
+	width: 8px;
+}
+
+.aside .panel-group .panel-heading a .caret {
+	transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+}
+
+.aside .panel-group .panel-heading a .caret.rotate {
+	transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+}
+
+.aside .panel-group .panel-collapse {
+	background-color: #f8f8f8;
+}
+
+.aside .panel-group .panel-collapse a:hover,
+.aside .panel-group .panel-collapse a:focus {
+	color: #00B7FF;
+	text-decoration: none;
+}
+
+.aside .panel-group a.active {
+	color: #d44950;
+}
+
 
 @media (min-width: 769px) {
 	.form-control {
@@ -125,71 +190,6 @@ a:focus, button:focus, input:focus, textarea:focus {
 		background-color: white;
 	}
 
-	.aside .panel-group .panel {
-		margin-bottom: 0px;
-		box-shadow: 0px;
-		border-radius: 0px;
-		border: 0px;
-		font-size: 14px;
-		box-shadow: none;
-	}
-
-	.aside .panel-group .panel-heading {
-		padding: 0px;
-		background-color: white;
-	}
-
-	.aside .panel-group .panel-heading a,
-	.aside .panel-group .panel-link a {
-		display: block;
-		padding: 8px 15px;
-		text-decoration: none;
-		color: #3c404d;
-	}
-
-	.aside .panel-group .panel-heading a .caret,
-	.aside .panel-group .panel-link a .fa {
-		margin-right: 6px;
-		font-size: 12px;
-		width: 8px;
-	}
-
-	.aside .panel-group .panel-heading a .caret {
-		transform: rotate(-90deg);
-		-moz-transform: rotate(-90deg);
-		-webkit-transform: rotate(-90deg);
-	}
-
-	.aside .panel-group .panel-heading a .caret.rotate {
-		transform: rotate(0deg);
-		-moz-transform: rotate(0deg);
-		-webkit-transform: rotate(0deg);
-	}
-
-	.aside .panel-group .panel-collapse {
-		background-color: #f8f8f8;
-	}
-
-	.aside .panel-group .panel-collapse a {
-		display: block;
-		padding: 8px 15px 8px 34px;
-		border-bottom: 1px solid #f4f4f4;
-		color: #555;
-		transition: .3s;
-		-moz-transition: .3s;
-		-webkit-transition: .3s;
-	}
-
-	.aside .panel-group .panel-collapse a:hover,
-	.aside .panel-group .panel-collapse a:focus {
-		color: #00B7FF;
-		text-decoration: none;
-	}
-
-	.aside .panel-group a.active {
-		color: #d44950;
-	}
-
 	.wrapper-content {
 		flex: 1;
 		background-color: #f6f6f6;
@@ -225,7 +225,7 @@ a:focus, button:focus, input:focus, textarea:focus {
 		top: 0px;
 		width: 100%;
 		height: 100%;
-		right: 50%;
+		right: 0px;
 		overflow: auto;
 		background-color: #f8f8f8;
 		z-index: 10;
@@ -233,34 +233,23 @@ a:focus, button:focus, input:focus, textarea:focus {
 
 	.navbar.navbar-inverse {
 		background-color: #3c404d;
+		margin-bottom: 0px;
 	}
 
 	.aside {
 		top: 0px;
-		right: 0px;
+		left: 100%;
 		bottom: 0px;
 		overflow-y: auto;
 		overflow-x: hidden;
-		width: 50%;
+		width: 70%;
 		background-color: white;
-	}
-	
-	.aside .panel a {
-		padding: 12px;
-		display: block;
-		color: #3c404d;
+		z-index: -1;
 	}
 
-	.aside .panel {
-		border: 0px;
-	}
-
-	.aside .panel .panel-heading {
-		padding: 0px;
-		background-color: white;
-		box-shadow: none;
-		border-radius: 0px;
-		border: 0px;
+	.wrapper-content {
+		background-color: #f8f8f8;
+		width: 100%;
 	}
 }
 

@@ -11,4 +11,17 @@ $( function () {
 			}
 		}
 	});
+
+	$(document).on('click', '.navbar-toggle.menuSilebar', function () {
+		var status = $(this).data('slider');
+		if (status) {
+			$(this).data('slider', false);
+			$('#wrapper').animate({right:0},300);
+			$('.aside').animate({left: '100%'},300);
+		} else {
+			$(this).data('slider', true);
+			$('#wrapper').animate({right:'70%'},300);
+			$('.aside').animate({left: '30%'}, 300);
+		}
+	})
 });
