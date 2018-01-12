@@ -1,126 +1,133 @@
-.Generalization .tab-pane {
-    position: absolute;
-    top: 42px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    overflow: auto;
-    padding: 15px;
-}
+@media (min-width: 769px) {
+    .Generalization .tab-pane {
+        position: absolute;
+        top: 42px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        overflow: auto;
+        padding: 15px;
+    }
 
-.Generalization > .nav-tabs {
-    background-color: white;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    border-bottom: 1px solid #ddd;
-}
+    .Generalization > .nav-tabs {
+        background-color: white;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        border-bottom: 1px solid #ddd;
+    }
 
-#dataCharts .product-list .thumbnail p:last-child {
-    margin-bottom: 0px;
-}
+    #dataCharts .product-list .thumbnail p:last-child {
+        margin-bottom: 0px;
+    }
 
-#dataCharts .product-list .thumbnail .product-price {
-    color: #e64340;
-}
+    #dataCharts .product-list .thumbnail .product-price {
+        color: #e64340;
+    }
 
-#dataCharts .product-list .thumbnail .btn-group {
-    float: right;
-}
+    #dataCharts .product-list .thumbnail .btn-group {
+        float: right;
+    }
 
-#dataCharts .user-info {
-    display: flex;
-    display: -ms-flex;
-    display: -moz-flex;
-    display: -webkit-flex;
-    flex-wrap: wrap;
-}
+    #dataCharts .user-info {
+        display: flex;
+        display: -ms-flex;
+        display: -moz-flex;
+        display: -webkit-flex;
+        flex-wrap: wrap;
+    }
 
-#dataCharts .user-info .user-name .vip {
-    color: orange;
-}
+    #dataCharts .user-info .user-name .vip {
+        color: orange;
+    }
 
-#dataCharts .user-info .user-header-img {
-    flex: 0 0 171px;
-}
+    #dataCharts .user-info .user-header-img {
+        flex: 0 0 171px;
+    }
 
-#dataCharts .user-info .user-info-detail {
-    flex: 1;
-    padding-left: 20px;
-    color: #666;
-}
+    #dataCharts .user-info .user-info-detail {
+        flex: 1;
+        padding-left: 20px;
+        color: #666;
+    }
 
-#dataCharts .batch-pay-table .table-th,
-#dataCharts .batch-pay-table .table-td {
+    #dataCharts .batch-pay-table .table-th,
+    #dataCharts .batch-pay-table .table-td {
 
-}
+    }
 
-#dataCharts .batch-pay-table .table-th:first-child,
-#dataCharts .batch-pay-table .table-td:first-child {
-    width: 10%;
-}
+    #dataCharts .batch-pay-table .table-th:first-child,
+    #dataCharts .batch-pay-table .table-td:first-child {
+        width: 10%;
+    }
 
-#dataCharts .batch-pay-table .table-th:nth-child(2),
-#dataCharts .batch-pay-table .table-td:nth-child(2) {
-    width: 35%;
-}
+    #dataCharts .batch-pay-table .table-th:nth-child(2),
+    #dataCharts .batch-pay-table .table-td:nth-child(2) {
+        width: 35%;
+    }
 
-#dataCharts .batch-pay-table .table-th:nth-child(3),
-#dataCharts .batch-pay-table .table-td:nth-child(3) {
-    width: 15%;
-}
+    #dataCharts .batch-pay-table .table-th:nth-child(3),
+    #dataCharts .batch-pay-table .table-td:nth-child(3) {
+        width: 15%;
+    }
 
-#dataCharts .batch-pay-table .table-th:nth-child(4),
-#dataCharts .batch-pay-table .table-td:nth-child(4) {
-    width: 30%;
-}
+    #dataCharts .batch-pay-table .table-th:nth-child(4),
+    #dataCharts .batch-pay-table .table-td:nth-child(4) {
+        width: 30%;
+    }
 
-#dataCharts .batch-pay-table .table-th:last-child,
-#dataCharts .batch-pay-table .table-td:last-child {
-    width: 10%;
-}
+    #dataCharts .batch-pay-table .table-th:last-child,
+    #dataCharts .batch-pay-table .table-td:last-child {
+        width: 10%;
+    }
 
-#orderSearch .where-search {
-    margin-bottom: 15px;
-}
+    #orderSearch .where-search {
+        margin-bottom: 15px;
+    }
 
-#orderSearch .where-search,
-#orderSearch .showTables {
-    padding: 12px;
-}
+    #orderSearch .where-search,
+    #orderSearch .showTables {
+        padding: 12px;
+    }
 
-#orderSearch .orderLogList .order {
-    border: 1px solid #ddd;
-    margin-bottom: 12px;
-}
+    #orderSearch .orderLogList .order {
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+    }
 
-#orderSearch .orderLogList .order .panel-footer a {
-    float: left;
-}
+    #orderSearch .orderLogList .order .panel-footer a {
+        float: left;
+    }
 
-#orderSearch .orderLogList .order .order-time {
-    float: right;
-}
+    #orderSearch .orderLogList .order .panel-footer > span {
+        margin-right: 15px;
+    }
 
-#orderSearch .orderLogList .order .title {
-    margin-bottom: 12px;
-    font-weight: bold;
-}
+    #orderSearch .orderLogList .order .order-time {
+        float: right;
+    }
 
-#orderSearch .orderLogList .order .photo {
-    border-radius: 50%;
-    overflow: hidden;
-    width: 50px;
-    height: 50px;
-}
+    #orderSearch .orderLogList .order .title {
+        margin-bottom: 12px;
+        font-weight: bold;
+    }
 
-/*#orderSearch .orderLogList .order .table tr th, */
-#orderSearch .orderLogList .order .table tr td {
-    line-height: 50px;
-    vertical-align: center;
-}
+    #orderSearch .orderLogList .order .photo {
+        border-radius: 50%;
+        overflow: hidden;
+        width: 50px;
+        height: 50px;
+    }
 
-#orderSearch .orderLogList .order .table tr td {
-    border-top: 0px;
+    /*#orderSearch .orderLogList .order .table tr th, */
+    #orderSearch .orderLogList .order .table tr td {
+        line-height: 50px;
+        vertical-align: center;
+    }
+
+    #orderSearch .orderLogList .order .table tr td {
+        border-top: 0px;
+    }
+
 }
