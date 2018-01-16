@@ -122,6 +122,22 @@
         border-top: 0px;
     }
 
+    .page-body {
+        padding: 15px;
+    }
+
+    .pirate .product-operation {
+        background: white;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 3px;
+        border: 1px solid #eee;
+    }
+
+    .pirate .product-list .thumbnail .caption .btn-group {
+        float: right;
+    }
+
 }
 
 @media (min-width: 320px) and (max-width: 640px) {
