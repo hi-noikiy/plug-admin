@@ -2,6 +2,8 @@
 
 > A Vue.js project
 
+> Go to visit [demo](https://849989428.github.io/plug-admin/dist)
+
 ## Build Setup
 
 ``` bash
