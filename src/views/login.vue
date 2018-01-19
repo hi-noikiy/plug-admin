@@ -75,7 +75,7 @@
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
-			content: 'GAME PLUG';
+			content: 'TEST IVIEW ADMIN';
 			color: white;
 			opacity: .25;
 			font-size: 81px;

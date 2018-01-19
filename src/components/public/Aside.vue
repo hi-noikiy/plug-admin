@@ -22,7 +22,6 @@ export default {
   name: 'Aside',
   data () {
       return {
-          power: 1, // [0: admin] [1: users]
           games: [
             {
               name: '海盗来了',
@@ -39,8 +38,7 @@ export default {
   },
   mounted () {
     this.$nextTick(() => {
-      // console.log(this.$store.state.power)
-      this.power = this.$store.state.power
+      
     })
   },
   methods: {

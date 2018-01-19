@@ -7,6 +7,7 @@
         <Viewmain></Viewmain>
       </transition>
     </section>
+    <FooterMain></FooterMain>
   </div>
 </template>
 
@@ -14,13 +15,15 @@
 import Navbar from "@/components/public/Navbar";
 import Asidebar from "@/components/public/Aside";
 import Viewmain from "@/components/public/ViewMain";
+import FooterMain from '@/components/public/Footbar';
 
 export default {
   name: "Main",
   components: {
     Navbar,
     Asidebar,
-    Viewmain
+    Viewmain,
+    FooterMain
   }
 };
 </script>

@@ -3,6 +3,10 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
+/**
+ * Vuex: vue 状态管理，通常用于中大型项目
+ */
+
 const store = new Vuex.Store({
 	state: {
 		power: 0, // [0: admin][1: users]
