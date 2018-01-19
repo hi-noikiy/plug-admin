@@ -40,6 +40,10 @@
 				</div>
 			</Col>
 		</Row>
+
+		<BackTop :height="150" :bottom="50">
+			<div class="backtop">返回顶端</div>
+		</BackTop>
 	</div>
 </template>
 
@@ -82,6 +86,12 @@
 					padding: 6px 0px;
 				}
 			}
+		}
+		.backtop {
+			background: #57a3f3;
+			padding: 8px 12px;
+			color: white;
+			border-radius: 3px;
 		}
 	}
 </style>

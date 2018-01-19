@@ -10,11 +10,11 @@
           <Input v-model="navbarSearch" placeholder="搜索游戏服务" icon="ios-search"></Input>
         </div>
         <div class="nav navbar-nav">
-          <MenuItem name="1">
+          <MenuItem name="/message">
             <Icon type="chatbox"></Icon>
             系统消息
           </MenuItem>
-          <MenuItem name="2">
+          <MenuItem name="/">
             <Avatar src="https://i.loli.net/2017/08/21/599a521472424.jpg"></Avatar>
             {{ $store.state.userinfo.username }}
           </MenuItem>

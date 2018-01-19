@@ -71,10 +71,7 @@
 		background-color: rgba(0, 0, 0, .8);
 
 		&::before {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
+			margin: 30px;
 			content: 'TEST IVIEW ADMIN';
 			color: white;
 			opacity: .25;
