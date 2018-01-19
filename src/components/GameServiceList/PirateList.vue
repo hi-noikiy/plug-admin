@@ -10,10 +10,12 @@
             </Col>
             <Col :span="16">
               <h3 class="product_name">{{ item.product_name }}</h3>
+              <p class="desc">{{ item.readme }}</p>
               <p class="price">单价：¥{{ item.price }}</p>
             </Col>
           </Row>
           <div class="opera">
+
             <p class="btn-group" v-if="$store.state.power == 1">
               <Button type="primary" size="small">详情</Button>
               <Button type="warning" size="small">购买</Button>
@@ -26,6 +28,7 @@
                 <span slot="close">关</span>
               </i-switch>
             </p>
+
           </div>
         </div>
 			</Col>
@@ -51,7 +54,7 @@ export default {
         },
         {
           _id: Math.random(),
-          product_name: "拼图碎片",
+          product_name: "刀枪帽",
           readme: "购买服务后将提供当前拼图最稀缺的碎片*1",
           price: 2,
           pic:
@@ -109,7 +112,7 @@ export default {
 
     .price {
       color: tomato;
-      margin-top: 12px;
+      margin-bottom: 6px;
     }
     .opera {
       border-top: 1px solid #f0f0f0;

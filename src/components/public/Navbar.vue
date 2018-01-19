@@ -10,9 +10,11 @@
           <Input v-model="navbarSearch" placeholder="搜索游戏服务" icon="ios-search"></Input>
         </div>
         <div class="nav navbar-nav">
-          <MenuItem name="/message">
-            <Icon type="chatbox"></Icon>
-            系统消息
+          <MenuItem name="/message" v-if="$store.state.power == 0">
+            <Badge dot>
+              <Icon type="chatbox"></Icon>
+              用户反馈
+            </Badge>
           </MenuItem>
           <MenuItem name="/">
             <Avatar src="https://i.loli.net/2017/08/21/599a521472424.jpg"></Avatar>
