@@ -9,6 +9,7 @@ Vue.use(Vuex)
 
 const store = new Vuex.Store({
 	state: {
+		uploadPath: '',
 		power: 0, // [0: admin][1: users]
 		userinfo: {} // user info			
 	},

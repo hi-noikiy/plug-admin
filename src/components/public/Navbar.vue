@@ -2,9 +2,9 @@
   <div class="navbar">
       <Menu @on-select="changeRoute" mode="horizontal" theme="light" class="navbar">
         <div class="navbar-logo">
-          <a href="#" class="site-logo">
+          <router-link to="/" class="site-logo">
             腻歪游戏
-          </a>
+          </router-link>
         </div>
         <div class="navbar-search">
           <Input v-model="navbarSearch" placeholder="搜索游戏服务" icon="ios-search"></Input>
