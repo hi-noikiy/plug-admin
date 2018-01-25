@@ -1,27 +1,27 @@
 <template>
-  <div class="recommend">
-      <h2 class="title">推荐服务</h2>
-      <Row :gutter="15">
-          <Col :span="2" v-for="item in list" :key="item._id">
-            <div class="card">
-                <img :src="item.pic" width="100%" alt="">
-                <div class="card-caption">
-                    <h4 class="product-name">{{ item.product_name }} <span class="product-price">¥{{ item.price }}</span></h4>
-                    <p>{{ item.readme }}</p>
+    <div class="recommend">
+        <h2 class="title">推荐服务</h2>
+        <Row :gutter="15">
+            <Col :span="2" v-for="item in list" :key="item._id">
+                <div class="card">
+                    <img :src="item.pic" width="100%" alt="">
+                    <div class="card-caption">
+                        <h4 class="product-name">{{ item.product_name }} <span class="product-price">¥{{ item.price }}</span></h4>
+                        <p>{{ item.readme }}</p>
+                    </div>
                 </div>
-            </div>
-          </Col>
-          <Col :span="2">
-            <div class="card more"></div>
-          </Col>
-      </Row>
-  </div>
+            </Col>
+            <Col :span="2">
+                <div class="card more"></div>
+            </Col>
+        </Row>
+    </div>
 </template>
 
 <script>
 export default {
   name: 'recommend',
-  data () {
+    data () {
       return {
           list: [
               {
@@ -57,7 +57,7 @@ export default {
               }
           ]
       }
-  }
+    }
 }
 </script>
 
