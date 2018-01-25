@@ -42,10 +42,10 @@ export default {
       ]
     };
   },
-  mounted () {
+  mounted() {
     this.$nextTick(() => {
-      console.log(this.$route.path)
-    })
+      console.log(this.$route.path);
+    });
   },
   methods: {
     onSelectPath(value) {

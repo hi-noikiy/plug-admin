@@ -1,0 +1,5 @@
+{
+	"css": ["less", "scss", "css"],
+	"js": ["es6","<=es5"],
+	"html": "Vue html template"
+}

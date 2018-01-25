@@ -13,7 +13,8 @@ const loginComponent = resolve => require(['@/views/login'], resolve)
 const primary_path = {
   main: resolve => require(['@/views/main'], resolve),
   welcome: resolve => require(['@/views/welcome'], resolve),
-  games: resolve => require(['@/views/game/GameMain'], resolve)
+  games: resolve => require(['@/views/game/GameMain'], resolve),
+  acounts: resolve => require(['@/views/acounts/acounts'], resolve)
 }
   
 /**
@@ -30,7 +31,8 @@ const default_routes = [
     component: primary_path.main,
     children: [
       { path: '/', meta: requireAuth, component: primary_path.welcome },
-      { path: '/games/:id', meta: requireAuth, component: primary_path.games }
+      { path: '/games/:id', meta: requireAuth, component: primary_path.games },
+      { path: '/game-acounts', meta: requireAuth, component: primary_path.acounts }
     ]
   },
   {

@@ -31,41 +31,41 @@
 
 <script>
 export default {
-  name: 'Navbar',
-  data () {
-      return {
-          navbarSearch: '', // 搜索内容
-      }
+  name: "Navbar",
+  data() {
+    return {
+      navbarSearch: "" // 搜索内容
+    };
   },
   methods: {
-    changeRoute (path) {
+    changeRoute(path) {
       this.$router.push({
         path: path
-      })
+      });
     }
   }
-}
+};
 </script>
 
 <!-- css 由 sass 编译 -->
 <style lang="scss" scoped>
+.navbar {
   .navbar {
-    .navbar {
-      padding: 0px 30px;
+    padding: 0px 30px;
 
-      .navbar-search,
-      .navbar-logo {
-        float: left;
-      }
-      .navbar-logo {
-        font-size: 22px;
-      }
-      .navbar-search {
-        margin-left: 130px;
-      }
-      .navbar-nav {
-        float: right;
-      }
+    .navbar-search,
+    .navbar-logo {
+      float: left;
+    }
+    .navbar-logo {
+      font-size: 22px;
+    }
+    .navbar-search {
+      margin-left: 130px;
+    }
+    .navbar-nav {
+      float: right;
     }
   }
+}
 </style>
